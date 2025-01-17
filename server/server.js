@@ -36,7 +36,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-app.post('/autiemindset', async (req, res) => {
+app.post('/auntiemindset', async (req, res) => {
+  res.send('Auntie Mindset Endpoint is working!');
   const { prompt } = req.body;
 
   try {
