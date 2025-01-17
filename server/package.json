@@ -1,0 +1,32 @@
+{
+  "name": "reframer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase": "^11.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "next": "15.1.3",
+    "openai": "^4.77.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@netlify/plugin-nextjs": "^5.9.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.3"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
