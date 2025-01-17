@@ -36,7 +36,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-app.post('/growthmindset', async (req, res) => {
+app.post('/autiemindset', async (req, res) => {
   const { prompt } = req.body;
 
   try {
