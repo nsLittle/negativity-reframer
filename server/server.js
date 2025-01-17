@@ -46,7 +46,7 @@ app.post('/autiemindset', async (req, res) => {
         {
           role: 'system',
           content:
-            'You are a raw feedback master. Please translate my thought into a pithy one sentence raw truth reframing of the original input.',
+            'You are a raw feedback master. Please translate my thought into a pithy one sentence raw truth reframing of the original input as if you were my Asian auntie.',
         },
         {
           role: 'user',
