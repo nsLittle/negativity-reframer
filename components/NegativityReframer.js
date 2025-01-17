@@ -1,7 +1,7 @@
 'use client';
 import { useState } from "react";
 
-export default function Reframer() {
+export default function NegativityReframer() {
   const [ramble, setRamble] = useState('');
   const [prompt, setPrompt] = useState('');
   const [response, setResponse] = useState('');
@@ -14,7 +14,7 @@ export default function Reframer() {
       ? 'https://reframer-473c134b8246.herokuapp.com'.replace(/\/$/, '')
       : 'https://reframer-473c134b8246.herokuapp.com'.replace(/\/$/, '');
 
-      const res = await fetch(`${API_URL}/growthmindset`, {
+      const res = await fetch(`${API_URL}/auntiemindset`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -62,8 +62,8 @@ export default function Reframer() {
       return;
     }
 
-    const subject = "Positivity Reframer";
-    const body = `Here is your positive thought from the Reframer:\n\nPrompt: ${prompt}\n\nResponse: ${response}`;
+    const subject = "Negativity Reframer";
+    const body = `Here is auntie responding to your thought from the Reframer:\n\nPrompt: ${prompt}\n\nResponse: ${response}`;
 
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
@@ -75,14 +75,14 @@ export default function Reframer() {
   return (
     <>
       <div className="reframer-box">
-        <p className="intro-text">Turn negative thoughts into</p>
-        <p className="intro-text">fuel for growth!</p>
+        <p className="intro-text">Turn your vulneratble thoughts into</p>
+        <p className="intro-text">fuel for auntie!</p>
         <input className="reframer-input" value={prompt} placeholder="Your thoughts" onChange={handleThoughts}>
         </input>
         
         <br />
         
-        <button className="reframer-submit" type="button" onClick={handleClick}>Reframer</button>
+        <button className="reframer-submit" type="button" onClick={handleClick}>Hi Auntie!</button>
 
         <button className="reframer-email" type="button" onClick={handleEmail}>
           Email My Results
