@@ -37,7 +37,6 @@ const openai = new OpenAI({
 });
 
 app.post('/auntiemindset', async (req, res) => {
-  res.send('Auntie Mindset Endpoint is working!');
   const { prompt } = req.body;
 
   try {
