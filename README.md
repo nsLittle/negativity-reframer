@@ -1,3 +1,3 @@
 ## Negativity Reframer
 
-This is dark side of the reframer.
+This is the dark side of the reframer app.

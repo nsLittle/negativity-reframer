@@ -11,8 +11,8 @@ export default function NegativityReframer() {
   const fetchResponse = async () => {
     try {
       const API_URL = process.env.NODE_ENV === 'production'
-      ? 'https://reframer-473c134b8246.herokuapp.com'.replace(/\/$/, '')
-      : 'https://reframer-473c134b8246.herokuapp.com'.replace(/\/$/, '');
+      ? 'https://negativity-reframer-5d42696baa3b.herokuapp.com/'.replace(/\/$/, '')
+      : 'https://negativity-reframer-5d42696baa3b.herokuapp.com/'.replace(/\/$/, '');
 
       const res = await fetch(`${API_URL}/auntiemindset`, {
         method: 'POST',
@@ -75,7 +75,7 @@ export default function NegativityReframer() {
   return (
     <>
       <div className="reframer-box">
-        <p className="intro-text">Turn your vulneratble thoughts into</p>
+        <p className="intro-text">Turn your vulnerable thoughts into</p>
         <p className="intro-text">fuel for auntie!</p>
         <input className="reframer-input" value={prompt} placeholder="Your thoughts" onChange={handleThoughts}>
         </input>
