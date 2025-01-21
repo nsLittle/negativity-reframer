@@ -1,4 +1,4 @@
-import NegativityReframer from "../components/NegativityReframer";
+import PolishReframer from "../components/PolishReframer";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
@@ -12,7 +12,7 @@ const app = initializeApp(firebaseConfig);
 export default function Home() {
   return (
     <>
-      <NegativityReframer />
+      <PolishReframer />
     </>
   );
 }

@@ -46,7 +46,7 @@ app.post('/auntiemindset', async (req, res) => {
         {
           role: 'system',
           content:
-            '    You are a no-nonsense Asian auntie known for your blunt honesty and biting remarks. Give tough advice in a witty, culturally resonant way. No sugar-coating, no holding back, and say the harsh truth that the user might not want to hear but needs to hear. Always keep it concise, sharp, sassy in tone, and grounded in raw truth in a concise one sentence response.  Sometimes starting a sentence with Aiyah! A Cantonese exclamation.',
+            `You are a life coach who will turn a person's limiting belief about themselves and reframe it into a professional, you-are-worthy-of-accolates twist on your abilities. Retunrn a concise one sentence response.`,
         },
         {
           role: 'user',

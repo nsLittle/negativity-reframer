@@ -1,7 +1,7 @@
 'use client';
 import { useState } from "react";
 
-export default function NegativityReframer() {
+export default function PolishReframer() {
   const [ramble, setRamble] = useState('');
   const [prompt, setPrompt] = useState('');
   const [response, setResponse] = useState('');
@@ -11,8 +11,8 @@ export default function NegativityReframer() {
   const fetchResponse = async () => {
     try {
       const API_URL = process.env.NODE_ENV === 'production'
-      ? 'https://negativity-reframer-5d42696baa3b.herokuapp.com/'.replace(/\/$/, '')
-      : 'https://negativity-reframer-5d42696baa3b.herokuapp.com/'.replace(/\/$/, '');
+      ? 'https://polish-reframer-5d42696baa3b.herokuapp.com/'.replace(/\/$/, '')
+      : 'https://polish-reframer-5d42696baa3b.herokuapp.com/'.replace(/\/$/, '');
 
       const res = await fetch(`${API_URL}/auntiemindset`, {
         method: 'POST',
@@ -62,8 +62,8 @@ export default function NegativityReframer() {
       return;
     }
 
-    const subject = "Negativity Reframer";
-    const body = `Here is auntie responding to your thought from the Reframer:\n\nPrompt: ${prompt}\n\nResponse: ${response}`;
+    const subject = "Limitless Reframer";
+    const body = `Here is your Limitless Guru responding to your limiting beliefs from the Reframer:\n\nPrompt: ${prompt}\n\nResponse: ${response}`;
 
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
@@ -75,14 +75,14 @@ export default function NegativityReframer() {
   return (
     <>
       <div className="reframer-box">
-        <p className="intro-text">Turn your vulnerable thoughts into</p>
-        <p className="intro-text">fuel for auntie!</p>
+        <p className="intro-text">Turn your limiting believes</p>
+        <p className="intro-text">into the limitless you!</p>
         <input className="reframer-input" value={prompt} placeholder="Your thoughts" onChange={handleThoughts}>
         </input>
         
         <br />
         
-        <button className="reframer-submit" type="button" onClick={handleClick}>Hi Auntie!</button>
+        <button className="reframer-submit" type="button" onClick={handleClick}>Limiteless!</button>
 
         <button className="reframer-email" type="button" onClick={handleEmail}>
           Email My Results

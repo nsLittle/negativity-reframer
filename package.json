@@ -6,7 +6,8 @@
     "build": "next build",
     "export": "next export",
     "start": "node server/server.js",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "dev": "next dev"
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",
