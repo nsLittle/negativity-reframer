@@ -1,7 +1,7 @@
 'use client';
 import { useState } from "react";
 
-export default function PolishReframer() {
+export default function LimitlessReframer() {
   const [ramble, setRamble] = useState('');
   const [prompt, setPrompt] = useState('');
   const [response, setResponse] = useState('');
@@ -11,8 +11,8 @@ export default function PolishReframer() {
   const fetchResponse = async () => {
     try {
       const API_URL = process.env.NODE_ENV === 'production'
-      ? 'https://polish-reframer-5d42696baa3b.herokuapp.com/'.replace(/\/$/, '')
-      : 'https://polish-reframer-5d42696baa3b.herokuapp.com/'.replace(/\/$/, '');
+      ? 'https://limitless-reframer-7e82e380af02.herokuapp.com/'.replace(/\/$/, '')
+      : 'https://limitless-reframer-7e82e380af02.herokuapp.com/'.replace(/\/$/, '');
 
       const res = await fetch(`${API_URL}/auntiemindset`, {
         method: 'POST',

@@ -13,7 +13,7 @@ app.use(cookieParser());
 const cors = require('cors');
 
 const allowedOrigins = [
-  'https://negativity-reframer-5d42696baa3b.herokuapp.com/',
+  'https://limitless-reframer-7e82e380af02.herokuapp.com/',
 ];
 
 app.use(
