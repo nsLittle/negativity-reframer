@@ -1,4 +1,4 @@
-import PolishReframer from "../components/PolishReframer";
+import PolishReframer from "../components/LimitlessReframer";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
