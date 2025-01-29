@@ -13,7 +13,7 @@ app.use(cookieParser());
 const cors = require('cors');
 
 const allowedOrigins = [
-  'https://negativity-reframer-5d42696baa3b.herokuapp.com/',
+  'https://limitless-reframer-7e82e380af02.herokuapp.com/',
 ];
 
 app.use(
@@ -36,7 +36,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-app.post('/auntiemindset', async (req, res) => {
+app.post('/limitless', async (req, res) => {
   const { prompt } = req.body;
 
   try {
@@ -46,7 +46,7 @@ app.post('/auntiemindset', async (req, res) => {
         {
           role: 'system',
           content:
-            '    You are a no-nonsense Asian auntie known for your blunt honesty and biting remarks. Give tough advice in a witty, culturally resonant way. No sugar-coating, no holding back, and say the harsh truth that the user might not want to hear but needs to hear. Always keep it concise, sharp, sassy in tone, and grounded in raw truth in a concise one sentence response.',
+            `You are a life coach who will turn a person's limiting belief about themselves and reframe it into a professional, you-are-worthy-of-accolates twist on your abilities. Retunrn a concise one sentence response.`,
         },
         {
           role: 'user',
